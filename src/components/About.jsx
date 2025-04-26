@@ -1,0 +1,55 @@
+import React from 'react'
+import profile from '../assets/me-2-removebg-preview.png'
+import github from '../assets/github.svg'
+import linkedin from '../assets/linkedin.svg'
+import instagram from '../assets/instagram.svg'
+import resume from '../assets/Resume.pdf'
+
+const About = () => {
+  return (
+    <div className='flex flex-col w-full'>
+      <div id='aboutMe' className='flex flex-row w-full justify-center gap-[150px] flex-wrap'> 
+        <div className='flex flex-col justify-center'>
+          <img src={profile} alt='Huzaifa Pachisa' className='rounded-[100%] h-[200px] w-[200px] mb-[10px] pt-4 bg-[linear-gradient(38.31deg,_rgba(193,228,98,0.76)_30.29%,_rgba(16,255,235,0.94)_83.68%)] shadow-[0px_4px_4px_rgba(0,0,0,0.3)] border border-[rgba(0,0,0,0.24)]'/>
+          <span className='flex flex-col justify-center items-center'>
+            <h3 className='text-center'>Huzaifa Pachisa</h3>
+            <h3 className='text-center'>Full-stack developer</h3>
+            <div className='flex flex-row'>
+              <a href='https://github.com/huzaifa25a' target='_blank'>
+                  <img src={github} alt='github' className='h-[37px]'/>
+              </a>
+              <a href='https://www.linkedin.com/in/huzaifa-pachisa-a0723a1b6/' target='_blank'>
+                  <img src={linkedin} alt='Linkedin' className='h-[40px]'/>
+              </a>
+              <a href='https://www.instagram.com/huzaifa_pachisa_/?next=%2F' target='_blank'>
+                  <img src={instagram} alt='Instagram' className='h-[40px]'/>
+              </a>
+            </div>
+          </span>
+        </div>
+        <div className='flex flex-col w-[540px] gap-[10px]'>
+          <div className='flex flex-col'>
+            <h1 className='text-[24px] mb-4 text-center'>About Me</h1>
+            <p>I’m a full-stack developer with a Master’s in Computer Applications. I specialize in building web applications using the MERN stack — React, Node.js, MongoDB, and Express. I’m passionate about creating sleek, functional, and user-friendly interfaces while ensuring high performance. When I'm not coding, you’ll find me gaming or planning my next adventure.</p>
+          </div> <br/>
+          {/* <div className='flex flex-col items-center'>
+            <h1>What I do?</h1>
+            <p>I build web apps using the MERN stack — React, Node.js, MongoDB, and Express. My focus is on creating user-friendly interfaces, writing clean code, and ensuring performance is top-notch.</p>
+          </div> <br/> */}
+          <div className='flex flex-col items-center'>
+            <h1 className='mb-2 font-medium text-[18px]'>Freelance Life</h1>
+            <p className=''>Outside of my main projects, I freelance on Fiverr, where I’ve earned a Level 2 Seller badge. I enjoy working with clients around the world and delivering work that exceeds expectations.</p> <br/><br/>
+            <div className='flex flex-row gap-[20px] items-center'>
+              <button className='cursor-pointer border-black border-[2px] px-1 py-0.5 rounded-md transition-transform duration-200 drop-shadow-[0px_4px_4px_rgba(0,0,0,0.2)] hover:scale-105 hover:shadow-lg'>
+                <a href={resume} download="cv.pdf">Download CV</a>
+              </button>
+              <a href='https://www.fiverr.com/huzaifa25' target='_blank' className='text-[#5a5a5a] hover:text-[#393939] transition-transform duration-200 drop-shadow-[0px_4px_4px_rgba(0,0,0,0.2)] hover:scale-105 hover:drop-shadow-[0px_4px_4px_rgba(0,0,0,0.3)]'>Checkout my gig on Fiverr</a>
+            </div>
+          </div>   
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default About

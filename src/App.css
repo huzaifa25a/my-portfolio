@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+/* #main-container{
+    background-color: #f8f8f8;
+}
+
+html.dark{
+    background-color: #393939;
+    color: #ffff;
+} */
+
+*{
+    scroll-behavior: smooth;
+    font-family: 'kufam';
+    color: #2e2e2e;
+}
+
+#Hero-section, #hire-me{
+    @media (max-width: 890px){
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        margin-bottom: 20px;
+    }
+}
+
+#hello-section{
+    @media (max-width: 890px){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+#aboutMe{
+    @media (max-width: 1078px){
+        gap: 36px;
+    }
+}
+
+#skillName{
+    @media (max-width: 600px){
+        flex-wrap: wrap;
+        margin-bottom: 28px;
+        gap: 4px;
+    }
+}
+
+#header{
+    @media (max-width: 768px){
+        display: flex;
+        justify-content: space-between;
+    }
+}   
