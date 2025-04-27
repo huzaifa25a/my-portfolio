@@ -14,8 +14,8 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-[#f8f8f8] dark:bg-[#1a1a1a] fixed w-full z-50 shadow-sm border-b border-[#b9b9b9] px-4 py-3 flex justify-between items-center">
-      <div className="text-xl font-bold text-black dark:text-white">Huzaifa.dev</div>
+    <header className="bg-[#f8f8f8] fixed w-full z-50 shadow-sm border-b border-[#b9b9b9] px-4 py-3 flex justify-between items-center">
+      <div className="text-xl font-bold text-black">Huzaifa.dev</div>
 
       {/* Desktop nav */}
       <nav className="hidden md:flex space-x-6 items-center text-sm font-medium">
@@ -35,14 +35,14 @@ const Header = () => {
       {/* Mobile */}
       <div className="md:hidden flex items-center gap-4">
         {/* <ThemeToggle /> */}
-        <button onClick={() => setMenuOpen(!menuOpen)} className="text-black dark:text-white cursor-pointer">
+        <button onClick={() => setMenuOpen(!menuOpen)} className="text-black cursor-pointer">
           {menuOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
       </div>
 
       {/* Mobile Menu Fullscreen */}
       <div
-        className={`fixed top-0 right-0 h-full w-[50%] sm:w-[30%] bg-[#f8f8f8] dark:bg-[#1a1a1a] shadow-lg transform transition-transform duration-300 z-40 ${
+        className={`fixed top-0 right-0 h-full w-[50%] sm:w-[30%] bg-[#f8f8f8] shadow-lg transform transition-transform duration-300 z-40 ${
           menuOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
