@@ -3,8 +3,8 @@ import React from 'react'
 const Projects = () => {
   return (
     <div id='Projects'>
-      <h1 className='text-[24px] p-4'>Projects</h1>
-      <div>
+      <h1 className='text-[24px] p-4 text-center'>Projects</h1>
+      <div className='text-justify'>
         Checkout my Github profile for information related my projects.
       </div>
     </div>
