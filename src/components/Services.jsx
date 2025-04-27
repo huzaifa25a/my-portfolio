@@ -15,12 +15,12 @@ const Services = () => {
             <h1 className='text-[24px] mb-4'>My Services</h1>
             <div className='flex flex-wrap justify-center'>
                 {services.map((service, index) => (
-                    <div key={index} className='cursor-pointer rounded-md max-w-[250px] m-2 p-4 flex flex-col items-center border-black border-[2px] shadow-md duration-200 hover:transition-transform hover:scale-103 hover:shadow-lg'>
+                    <div key={index} className='cursor-pointer rounded-md max-w-[250px] m-2 p-4 flex flex-col items-center border-black border-[2px] shadow-md duration-200 hover:transition-transform hover:scale-103 hover:shadow-lg active:transition-transform active:scale-103 active:shadow-lg'>
                         <img src={service.icon} alt='service' className='h-[100px] mb-6'/>
                         <div className='font-bold mb-2 text-center'>
                             <span>{service.name}</span>
                         </div>
-                        <div className='text-center'>
+                        <div className='text-justify'>
                             <span>{service.description}</span>
                         </div> 
                     </div>

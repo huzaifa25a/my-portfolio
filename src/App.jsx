@@ -24,7 +24,7 @@ const App = () => {
               </div>
               <div id='hire-me' className='flex flex-row justify-start items-center'>
                 <a href='#Contact'>
-                <button className='p-[4px] mt-[12px] rounded-sm border-black border-[2px] flex flex-row items-center cursor-pointer text-[16px] drop-shadow-[0_4px_4px_rgba(0,0,0,0.3)] transition-transform duration-200 hover:scale-105 hover:shadow-lg'>
+                <button className='p-[4px] mt-[12px] rounded-sm border-black border-[2px] flex flex-row items-center cursor-pointer text-[16px] drop-shadow-[0_4px_4px_rgba(0,0,0,0.3)] transition-transform duration-200 hover:scale-105 hover:shadow-lg active:scale-105 active:shadow-lg'>
                   Hire me
                   <img src={telegram} alt='contact me' height={20} width={20} className='ml-[4px]' />
                 </button>

@@ -63,7 +63,7 @@ const Contact = () => {
             </div>
             <label htmlFor="name">Enter Name:</label>
             <input 
-                className='rounded-sm border-black border-[2px] flex flex-row px-[6px] hover:bg-[#ededed]'
+                className='p-[4px] rounded-sm border-black border-[2px] flex flex-row px-[6px] hover:bg-[#ededed]'
                 type = 'text'
                 name='name'
                 placeholder='Name'
@@ -71,7 +71,7 @@ const Contact = () => {
             /><br/>
             <label htmlFor="email">Enter Email:</label>
             <input
-                className='rounded-sm border-black border-[2px] flex flex-row px-[6px] hover:bg-[#ededed]' 
+                className='p-[4px] rounded-sm border-black border-[2px] flex flex-row px-[6px] hover:bg-[#ededed]' 
                 type = 'text'
                 placeholder='email'
                 name='email'
@@ -79,7 +79,7 @@ const Contact = () => {
             /><br/>
             <label htmlFor="subject">Enter subject:</label>
             <input 
-                className='rounded-sm border-black border-[2px] flex flex-row px-[6px] hover:bg-[#ededed]'
+                className='p-[4px] rounded-sm border-black border-[2px] flex flex-row px-[6px] hover:bg-[#ededed]'
                 type = 'subject'
                 placeholder='subject'
                 name='subject'
@@ -93,7 +93,7 @@ const Contact = () => {
             /><br/>
             <div className='flex justify-center'>
                 <input 
-                    className='w-[78px] rounded-sm border-black border-[2px] px-[6px] hover:bg-[#ededed] cursor-pointer'
+                    className='w-[78px] rounded-sm border-black border-[2px] px-[6px] py-[3px] hover:bg-[#ededed] cursor-pointer active:bg-[#ededed]'
                     type = 'submit'
                 />
             </div>
