@@ -26,7 +26,7 @@ const Skills = () => {
     ]
     return(
         <div ref={ref} className='flex flex-col'>
-            <h1 className='flex justify-center text-[24px] mb-4'>Skills</h1>
+            <h1 className='flex justify-center text-[24px] mb-4'>My Skills</h1>
             {skills.map((skill, index) => (
                 <div id='skillSection'>
                     <div id='skillName' key={index} className='flex justify-start items-center mb-2'>

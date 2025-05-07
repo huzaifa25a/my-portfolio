@@ -37,13 +37,13 @@ const About = () => {
             <p>I build web apps using the MERN stack — React, Node.js, MongoDB, and Express. My focus is on creating user-friendly interfaces, writing clean code, and ensuring performance is top-notch.</p>
           </div> <br/> */}
           <div className='flex flex-col items-center'>
-            <h1 className='mb-2 font-medium text-[18px]'>Freelance Life</h1>
-            <p className='text-justify'>I also freelance on Fiverr, where I’ve earned a Level 2 Seller badge. I enjoy working with clients around the world and delivering work that exceeds expectations.</p> <br/><br/>
+            {/* <h1 className='mb-2 font-medium text-[18px]'>Freelance Life</h1> */}
+            {/* <p className='text-justify'>I also freelance on Fiverr, where I’ve earned a Level 2 Seller badge. I enjoy working with clients around the world and delivering work that exceeds expectations.</p> <br/><br/> */}
             <div className='flex flex-row gap-[20px] items-center'>
               <button className='cursor-pointer border-black border-[2px] px-1 py-0.5 rounded-md transition-transform duration-200 drop-shadow-[0px_4px_4px_rgba(0,0,0,0.2)] hover:scale-105 hover:shadow-lg active:scale-105 active:shadow-lg'>
                 <a href={resume} download="cv.pdf">Download CV</a>
               </button>
-              <a href='https://www.fiverr.com/huzaifa25' target='_blank' className='text-[#5a5a5a] hover:text-[#393939] transition-transform duration-200 drop-shadow-[0px_4px_4px_rgba(0,0,0,0.2)] hover:scale-105 hover:drop-shadow-[0px_4px_4px_rgba(0,0,0,0.3) active:text-[#393939] active:scale-105 active:drop-shadow-[0px_4px_4px_rgba(0,0,0,0.3)]'>Checkout my gig on Fiverr</a>
+              {/* <a href='https://www.fiverr.com/huzaifa25' target='_blank' className='text-[#5a5a5a] hover:text-[#393939] transition-transform duration-200 drop-shadow-[0px_4px_4px_rgba(0,0,0,0.2)] hover:scale-105 hover:drop-shadow-[0px_4px_4px_rgba(0,0,0,0.3) active:text-[#393939] active:scale-105 active:drop-shadow-[0px_4px_4px_rgba(0,0,0,0.3)]'>Checkout my gig on Fiverr</a> */}
             </div>
           </div>   
         </div>
