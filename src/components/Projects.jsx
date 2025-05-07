@@ -34,7 +34,7 @@ const Projects = () => {
         {projects.map((project, index) => (
           <div
             key={index}
-            className={`cursor-pointer flex flex-col border-black rounded-sm border-[2px] p-4 w-[240px] shadow-md transition-all duration-500 ease-in-out hover:scale-105 hover:shadow-lg ${showDescription === index ? 'h-auto': 'h-[70px]'}`}
+            className={`cursor-pointer flex flex-col border-black rounded-sm border-[2px] p-4 w-[240px] shadow-md transition-all duration-500 ease-in-out hover:scale-105 hover:shadow-lg active:scale-105 active:shadow-lg ${showDescription === index ? 'h-[270px]': 'h-[70px]'}`}
             onMouseEnter={() => setShowDescription(index)}
             onMouseLeave={() => setShowDescription(null)}
             onClick={() => setShowDescription(showDescription === index ? null : index)}
@@ -43,7 +43,7 @@ const Projects = () => {
               <span className='font-semibold text-center mb-2'>{project.name}</span>
               <div
                 className={`flex flex-col items-center text-justify overflow-hidden transition-all duration-500 ease-in-out ${
-                  showDescription === index ? 'overflow-y-auto opacity-100' : 'opacity-0'
+                  showDescription === index ? 'opacity-100' : 'opacity-0'
                 }`}
               >
                 <p className='text-sm mt-2 mb-3'>{project.description}</p>
