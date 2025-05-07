@@ -34,7 +34,7 @@ const Projects = () => {
         {projects.map((project, index) => (
           <div
             key={index}
-            className={`cursor-pointer flex flex-col border-black rounded-sm border-[2px] p-4 w-[240px] shadow-md transition-all duration-500 ease-in-out hover:scale-105 hover:shadow-lg active:scale-105 active:shadow-lg ${showDescription === index ? 'h-[270px]': 'h-[70px]'}`}
+            className={`cursor-pointer flex flex-col justify-around border-black rounded-sm border-[2px] p-4 w-[260px] shadow-md transition-all duration-500 ease-in-out hover:scale-105 hover:shadow-lg active:scale-105 active:shadow-lg ${showDescription === index ? 'h-[250px]': 'h-[70px]'}`}
             onMouseEnter={() => setShowDescription(index)}
             onMouseLeave={() => setShowDescription(null)}
             onClick={() => setShowDescription(showDescription === index ? null : index)}
@@ -46,8 +46,8 @@ const Projects = () => {
                   showDescription === index ? 'opacity-100' : 'opacity-0'
                 }`}
               >
-                <p className='text-sm mt-2 mb-3'>{project.description}</p>
-                <a href={project.link} target='_blank' rel="noopener noreferrer" className='transition-transform hover:scale-105 active:scale-105 duration-300'>Know more...</a>
+                <p className='text-sm mt-2 mb-6 overflow-y-auto'>{project.description}</p>
+                <a href={project.link} target='_blank' rel="noopener noreferrer" className='transition-transform hover:scale-105 active:scale-105 duration-300'>Click to know more...</a>
               </div>
           </div>
         ))}
