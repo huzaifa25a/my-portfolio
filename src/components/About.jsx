@@ -17,13 +17,13 @@ const About = () => {
             <h3 className='text-center'>Full-stack developer</h3>
             <div className='flex flex-row'>
               <a href='https://github.com/huzaifa25a' target='_blank'>
-                  <img src={github} alt='github' className='h-[37px]'/>
+                  <img src={github} alt='github' className='h-[37px] transition-transform duration-300 hover:scale-105 active:scale-105'/>
               </a>
               <a href='https://www.linkedin.com/in/huzaifa-pachisa-a0723a1b6/' target='_blank'>
-                  <img src={linkedin} alt='Linkedin' className='h-[40px]'/>
+                  <img src={linkedin} alt='Linkedin' className='h-[40px] transition-transform duration-300 hover:scale-105 active:scale-105'/>
               </a>
               <a href='https://www.instagram.com/huzaifa_pachisa_/?next=%2F' target='_blank'>
-                  <img src={instagram} alt='Instagram' className='h-[40px]'/>
+                  <img src={instagram} alt='Instagram' className='h-[40px] transition-transform duration-300 hover:scale-105 active:scale-105'/>
               </a>
             </div>
           </span>

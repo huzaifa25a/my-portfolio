@@ -59,11 +59,11 @@ const Contact = () => {
         <form className='flex flex-col' ref={form} onSubmit={sendEmail}>
             <div className='flex flex-col items-center'>
                 <h1 className='text-[24px] mb-4'>Contact Me</h1>
-                <p>Feel free to reach out to me via email or through my social media accounts.</p>
+                <p className='text-justify'>Feel free to reach out to me via email or through my social media accounts.</p><br/>
             </div>
             <label htmlFor="name">Enter Name:</label>
             <input 
-                className='p-[4px] rounded-sm border-black border-[2px] flex flex-row px-[6px] hover:bg-[#ededed]'
+                className='p-[4px] rounded-sm border-black border-[2px] flex flex-row px-[6px] hover:bg-[#ededed] transition-all duration-200'
                 type = 'text'
                 name='name'
                 placeholder='Name'
@@ -71,7 +71,7 @@ const Contact = () => {
             /><br/>
             <label htmlFor="email">Enter Email:</label>
             <input
-                className='p-[4px] rounded-sm border-black border-[2px] flex flex-row px-[6px] hover:bg-[#ededed]' 
+                className='p-[4px] rounded-sm border-black border-[2px] flex flex-row px-[6px] hover:bg-[#ededed] transition-all duration-200' 
                 type = 'text'
                 placeholder='email'
                 name='email'
@@ -79,21 +79,21 @@ const Contact = () => {
             /><br/>
             <label htmlFor="subject">Enter subject:</label>
             <input 
-                className='p-[4px] rounded-sm border-black border-[2px] flex flex-row px-[6px] hover:bg-[#ededed]'
+                className='p-[4px] rounded-sm border-black border-[2px] flex flex-row px-[6px] hover:bg-[#ededed] transition-all duration-200'
                 type = 'subject'
                 placeholder='subject'
                 name='subject'
             /><br/>
             <label htmlFor="message">Enter Message:</label>
             <textarea 
-                className='rounded-sm border-black border-[2px] p-[6px] leading-[2em] min-h-[90px] h-auto hover:bg-[#ededed]'
+                className='rounded-sm border-black border-[2px] p-[6px] leading-[2em] min-h-[90px] h-auto hover:bg-[#ededed] transition-all duration-200'
                 placeholder='Type your message...'
                 required
                 name='message'
             /><br/>
             <div className='flex justify-center'>
                 <input 
-                    className='w-[78px] rounded-sm border-black border-[2px] px-[6px] py-[3px] hover:bg-[#ededed] cursor-pointer active:bg-[#ededed]'
+                    className='w-[78px] rounded-sm border-black border-[2px] px-[6px] py-[3px] hover:bg-[#ededed] cursor-pointer active:bg-[#ededed] transition-all duration-200'
                     type = 'submit'
                 />
             </div>

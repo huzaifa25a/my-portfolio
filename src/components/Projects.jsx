@@ -12,21 +12,21 @@ const Projects = () => {
       image: quickmark,
       name: 'Quickmark AI enabled bookmark manager',
       description:
-        'Quickmark is a chrome extension for intelligently managing bookmarks in chrome browsers. It has AI feature for smartly naming bookmarks and categorizing them in relevant groups.',
+        'Quickmark is a chrome extension for intelligently managing bookmarks in chrome browser. It has an AI feature for naming bookmarks and categorizing them into relevant groups.',
       link: 'https://github.com/huzaifa25a/QuickMark-chrome-extension'
     },
     {
       image: shipkart,
       name: 'Shipkart - Online courier service',
       description:
-        'Shipkart is an online courier service and management system that enables people to send and receive couriers from any part of India. Get personalized quotaions and basic to premium services.',
+        'Shipkart is an online courier service that allows people to send and receive courier throughout the country. Get personalized quotations based on region and basic to premium services.',
       link: 'https://github.com/huzaifa25a/Shipkart'
     },
     {
       image: nutrigen,
-      name: 'Nutrigen',
+      name: 'Nutrigen - Diet planner and recommendation app',
       description:
-        'Nutrigen is a diet planner and recommendation app that allows users to get personalized diet and food recommendations and recipes based on their personal preferences and health conditions.',
+        'Nutrigen is a diet planner and recommendation app that allows users to get personalized diet recommendations and recipes based on their personal preferences and health conditions.',
       link: 'https://github.com/huzaifa25a/Nutrigen'
     },
   ];
@@ -59,7 +59,7 @@ const Projects = () => {
             <div className="absolute inset-0 z-[1] bg-gradient-to-b from-black/60 via-transparent to-transparent"></div>
           
             {/* Content over background */}
-            <div className='relative z-999 p-4 text-white h-full flex flex-col justify-between'>
+            <div className='relative z-999 p-4 text-white h-full flex flex-col justify-around'>
               <span 
                 className={`font-semibold text-center mb-2 
                   ${showDescription === index ? 'opacity-100' : 'opacity-0'}`
@@ -83,7 +83,7 @@ const Projects = () => {
                   href={project.link}
                   target='_blank'
                   rel='noopener noreferrer'
-                  className='flex gap-2 transition-tranform hover:scale-105 duration-200 items-center'
+                  className='flex gap-2 transition-tranform hover:scale-105 duration-200 items-center hover:bg-[#e5e5e5a3] px-2 py-1 rounded-lg active:bg-[#e5e5e5a3]'
                   style={{color: '#e6e6e6'}}
                 >
                   Know more 
