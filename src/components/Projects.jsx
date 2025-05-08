@@ -48,7 +48,7 @@ const Projects = () => {
               className="projectImage absolute inset-0 bg-cover bg-no-repeat bg-center z-0 transition-all duration-500 ease-in-out filter"
               style={{
                 backgroundImage: `url(${project.image})`,
-                filter: showDescription === index ? 'brightness(20%)' : 'brightness(70%)'
+                filter: showDescription === index ? 'brightness(20%)' : 'brightness(100%)',
               }}
               onMouseEnter={() => setShowDescription(index)}
               onMouseLeave={() => setShowDescription(null)}
@@ -56,7 +56,7 @@ const Projects = () => {
             ></div>
 
             {/* Dark gradient overlay at top */}
-            <div className="absolute inset-0 z-[1] bg-gradient-to-b from-black/60 via-transparent to-transparent"></div>
+            {/* <div className="absolute inset-0 z-[1] bg-gradient-to-b from-black/60 via-transparent to-transparent"></div> */}
           
             {/* Content over background */}
             <div className='relative z-999 p-4 text-white h-full flex flex-col justify-around'>
