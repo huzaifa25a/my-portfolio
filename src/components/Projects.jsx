@@ -45,7 +45,7 @@ const Projects = () => {
           >
             {/* Background image with blur + dark overlay */}
             <div
-              className="projectImage absolute inset-0 bg-cover bg-no-repeat bg-center z-0 transition-all duration-500 ease-in-out filter"
+              className="projectImage absolute inset-0 bg-cover bg-no-repeat bg-top z-0 transition-all duration-500 ease-in-out filter"
               style={{
                 backgroundImage: `url(${project.image})`,
                 filter: showDescription === index ? 'brightness(20%)' : 'brightness(100%)',
