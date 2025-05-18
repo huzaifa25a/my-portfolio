@@ -3,7 +3,6 @@ import profile from '../assets/me-2-removebg-preview.png'
 import github from '../assets/github.svg'
 import linkedin from '../assets/linkedin.svg'
 import instagram from '../assets/instagram.svg'
-import resume from '../../public/Huzaifa_Pachisa-resume.pdf'
 
 const About = () => {
   return (
@@ -40,9 +39,13 @@ const About = () => {
             {/* <h1 className='mb-2 font-medium text-[18px]'>Freelance Life</h1> */}
             {/* <p className='text-justify'>I also freelance on Fiverr, where I’ve earned a Level 2 Seller badge. I enjoy working with clients around the world and delivering work that exceeds expectations.</p> <br/><br/> */}
             <div className='flex flex-row gap-[20px] items-center'>
-              <button className='cursor-pointer border-black border-[2px] px-1 py-0.5 rounded-md transition-transform duration-200 drop-shadow-[0px_4px_4px_rgba(0,0,0,0.2)] hover:scale-105 hover:shadow-lg active:scale-105 active:shadow-lg'>
-                <a href={resume} download="cv.pdf">Download CV</a>
-              </button>
+              <a
+                href="/Huzaifa_Pachisa-resume.pdf"
+                download="cv.pdf"
+                className="inline-block border-black border-[2px] px-1 py-0.5 rounded-md transition-transform duration-200 drop-shadow-[0px_4px_4px_rgba(0,0,0,0.2)] hover:scale-105 hover:shadow-lg active:scale-105 active:shadow-lg"
+              >
+                Download CV
+              </a>
               {/* <a href='https://www.fiverr.com/huzaifa25' target='_blank' className='text-[#5a5a5a] hover:text-[#393939] transition-transform duration-200 drop-shadow-[0px_4px_4px_rgba(0,0,0,0.2)] hover:scale-105 hover:drop-shadow-[0px_4px_4px_rgba(0,0,0,0.3) active:text-[#393939] active:scale-105 active:drop-shadow-[0px_4px_4px_rgba(0,0,0,0.3)]'>Checkout my gig on Fiverr</a> */}
             </div>
           </div>   
