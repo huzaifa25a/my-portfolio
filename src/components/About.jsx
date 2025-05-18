@@ -1,5 +1,5 @@
 import React from 'react'
-import profile from '../assets/me-2-removebg-preview.png'
+import profile from '../assets/green-bg.png'
 import github from '../assets/github.svg'
 import linkedin from '../assets/linkedin.svg'
 import instagram from '../assets/instagram.svg'
@@ -9,7 +9,7 @@ const About = () => {
     <div className='flex flex-col w-full'>
       <div id='aboutMe' className='flex flex-row w-full justify-center gap-[150px] flex-wrap'> 
         <div className='flex flex-col justify-center'>
-          <img src={profile} alt='Huzaifa Pachisa' className='rounded-[100%] h-[200px] w-[200px] mb-[10px] pt-4 bg-[#e6e6e6] shadow-[0px_2px_2px_rgba(0,0,0,0.3)] border border-[rgba(0,0,0,0.2)]'/>
+          <img src={profile} alt='Huzaifa Pachisa' className='rounded-[100%] h-[200px] w-[200px] mb-[10px] border border-[rgba(0,0,0,0.2)]'/>
           <span className='flex flex-col justify-center items-center'>
             <h3 className='text-center'>Huzaifa Pachisa</h3>
             <h3 className='text-center'>Full-stack developer</h3>
