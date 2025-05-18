@@ -3,7 +3,7 @@ import profile from '../assets/me-2-removebg-preview.png'
 import github from '../assets/github.svg'
 import linkedin from '../assets/linkedin.svg'
 import instagram from '../assets/instagram.svg'
-import resume from '../assets/Huzaifa_Pachisa-resume.pdf'
+import resume from '../../public/Huzaifa_Pachisa-resume.pdf'
 
 const About = () => {
   return (
