@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import quickmark from '../assets/quickmark.svg'
 import shipkart from '../assets/shipkart-1.png'
 import nutrigen from '../assets/nutrigen-1.png'
+import countryApp from '../assets/world-app.gif'
 import rightIcon from '../assets/right-arrow.svg'
 import '../App.css'
 
@@ -12,21 +13,28 @@ const Projects = () => {
       image: quickmark,
       name: 'Quickmark AI enabled bookmark manager',
       description:
-        'Quickmark is a chrome extension for intelligently managing bookmarks in chrome browser. It has an AI feature for naming bookmarks and categorizing them into relevant groups.',
+        'Quickmark is a smart Chrome extension designed to simplify bookmark management. It lets users seamlessly add, edit, and remove bookmarks while offering advanced search and filtering capabilities for quickly locating saved websites.',
       link: 'https://github.com/huzaifa25a/QuickMark-chrome-extension'
+    },
+    {
+      image: countryApp,
+      name: 'The World Explorer App',
+      description:
+        `Country App is an interactive web project that displays detailed information about every country in the world. Users can explore flags, populations, currencies, spoken languages, and other key facts in a visually engaging interface.`,
+      link: 'https://github.com/huzaifa25a/country-app'
     },
     {
       image: shipkart,
       name: 'Shipkart - Online courier service',
       description:
-        'Shipkart is an online courier service that allows people to send and receive courier throughout the country. Get personalized quotations based on region and basic to premium services.',
+        'Shipkart is a courier service web application that enables users to send and receive packages across the country. It provides real-time, personalized shipping quotes based on regions and offers various service levels—from basic to premium.',
       link: 'https://github.com/huzaifa25a/Shipkart'
     },
     {
       image: nutrigen,
       name: 'Nutrigen - Diet planner and recommendation app',
       description:
-        'Nutrigen is a diet planner and recommendation app that allows users to get personalized diet recommendations and recipes based on their personal preferences and health conditions.',
+        `Nutrigen is a health-focused app that delivers personalized diet plans and recipe recommendations. It tailors suggestions according to the user's dietary preferences, fitness goals, and health conditions to promote better eating habits.`,
       link: 'https://github.com/huzaifa25a/Nutrigen'
     },
   ];
