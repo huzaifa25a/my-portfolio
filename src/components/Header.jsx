@@ -17,7 +17,7 @@ const Header = () => {
 
   return (
     <header className={`fixed w-full z-50 border-b px-4 py-3 flex justify-between items-center ${darkMode ? 'bg-[#393939] shadow-[0_0_2px_#0ff,0_0_3px_#0ff,0_0_5px_#0ff] border-[#0ff]' : 'bg-[#f8f8f8] border-[#b9b9b9] shadow-sm'}`}>
-      <div className="text-xl font-bold">
+      <div className="text-xl font-bold self-end">
         <a href='/'>Huzaifa.dev</a>
       </div>
 
@@ -61,7 +61,7 @@ const Header = () => {
             <a
                 key={link}
                 href={`#${link}`}
-                className={`cursor-pointer ${activeTab === link ? 'font-semibold' : ''}`}
+                className={`cursor-pointer ${activeTab === link ? 'font-bold' : 'font-light'}`}
                 onClick={() => handleTabClick(link)}
             >
                 {link}
