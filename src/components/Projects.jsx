@@ -41,7 +41,7 @@ const Projects = () => {
 
   return (
     <div id='Projects' className='flex flex-col items-center justify-center flex-wrap'>
-      <h1 className='text-[24px] mb-4'>My Projects</h1>
+      <h1 className='text-[24px] mb-6'>My Projects</h1>
       <div className='flex flex-row flex-wrap gap-10 justify-center'>
         {projects.map((project, index) => (
           <div

@@ -7,16 +7,18 @@
     }
 }
 
-/* html.dark{
-    background-color: #393939;
-    color: #ffff;
-} */
-
-
 *{
     scroll-behavior: smooth;
     font-family: 'kufam';
+}
+
+.lightMode{
     color: #2e2e2e;
+}
+
+.darkMode{
+    color: white;
+    border-color: cyan;
 }
 
 #Hero-section, #hire-me{

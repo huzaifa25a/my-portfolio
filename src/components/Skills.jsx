@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import '../App.css'
 import { useInView } from 'react-intersection-observer';
 import javascript from '../assets/javascript.svg';
@@ -8,8 +8,10 @@ import mongo from '../assets/mongodb.svg';
 import bootstrap from '../assets/bootstrap.svg';
 import tailwind from '../assets/tailwindcss.svg';
 import css from '../assets/css3.png';
+import { ThemeContext } from '../ThemeContext';
 
 const Skills = () => {
+    const {darkMode} = useContext(ThemeContext);
     const { ref, inView } = useInView({
         threshold: 0.5,
         triggerOnce: true,
@@ -36,9 +38,9 @@ const Skills = () => {
                                 <img src={skill.icon} alt={skill.name} className='h-[40px]'/>
                             </span>
                         </div>
-                        <div id='skillBar' className='w-full bg-gray-300 rounded-full h-4'>
+                        <div id='skillBar' className={`w-full ${darkMode ? 'bg-gray-50' : 'bg-gray-300'} rounded-full h-4`}>
                         <div 
-                            className='bg-[#1d8cb5ea] h-4 rounded-full transition-all duration-1500 ease-in-out'
+                            className={`${darkMode ? 'bg-[#1db5abea]' : 'bg-[#1d8cb5ea]'}  h-4 rounded-full transition-all duration-1500 ease-in-out`}
                             style={{ width: inView? `${skill.level}%` : '0%' }}
                         ></div>
                         </div>

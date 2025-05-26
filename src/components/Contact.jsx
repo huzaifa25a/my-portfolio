@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import {useState, useRef} from 'react'
 import emailjs from 'emailjs-com'
+import { ThemeContext } from '../ThemeContext'
 
 const Contact = () => {
+    const {darkMode} = useContext(ThemeContext);
     const form = useRef();
     const [status, setStatus] = useState('');
     const [visible, setVisible] = useState(false);
@@ -63,7 +65,7 @@ const Contact = () => {
             </div>
             <label htmlFor="name">Enter Name:</label>
             <input 
-                className='p-[4px] rounded-sm border-black border-[2px] flex flex-row px-[6px] hover:bg-[#ededed] transition-all duration-200'
+                className={`p-[4px] rounded-sm border-[2px] flex flex-row px-[6px] transition-all duration-200 ${darkMode ? 'hover:bg-[#ffffff3b] focus:shadow-[0_0_2px_#0ff,0_0_5px_#0ff,0_0_10px_#0ff] border-[#0ff] focus:outline-none focus:ring-2 focus:ring-cyan-500' : 'hover:bg-[#ededed] border-black'}`}
                 type = 'text'
                 name='name'
                 placeholder='Name'
@@ -71,7 +73,7 @@ const Contact = () => {
             /><br/>
             <label htmlFor="email">Enter Email:</label>
             <input
-                className='p-[4px] rounded-sm border-black border-[2px] flex flex-row px-[6px] hover:bg-[#ededed] transition-all duration-200' 
+                className={`p-[4px] rounded-sm border-[2px] flex flex-row px-[6px] transition-all duration-200 ${darkMode ? 'hover:bg-[#ffffff3b] focus:shadow-[0_0_2px_#0ff,0_0_5px_#0ff,0_0_10px_#0ff] border-[#0ff] focus:outline-none focus:ring-2 focus:ring-cyan-500' : 'hover:bg-[#ededed] border-black'}`} 
                 type = 'text'
                 placeholder='email'
                 name='email'
@@ -79,21 +81,21 @@ const Contact = () => {
             /><br/>
             <label htmlFor="subject">Enter subject:</label>
             <input 
-                className='p-[4px] rounded-sm border-black border-[2px] flex flex-row px-[6px] hover:bg-[#ededed] transition-all duration-200'
+                className={`p-[4px] rounded-sm border-[2px] flex flex-row px-[6px] transition-all duration-200 ${darkMode ? 'hover:bg-[#ffffff3b] focus:shadow-[0_0_2px_#0ff,0_0_5px_#0ff,0_0_10px_#0ff] border-[#0ff] focus:outline-none focus:ring-2 focus:ring-cyan-500' : 'hover:bg-[#ededed] border-black'}`}
                 type = 'subject'
                 placeholder='subject'
                 name='subject'
             /><br/>
             <label htmlFor="message">Enter Message:</label>
             <textarea 
-                className='rounded-sm border-black border-[2px] p-[6px] leading-[2em] min-h-[90px] h-auto hover:bg-[#ededed] transition-all duration-200'
+                className={`rounded-sm border-[2px] p-[6px] leading-[2em] min-h-[90px] h-auto hover:bg-[#ededed] transition-all duration-200 ${darkMode ? 'hover:bg-[#ffffff3b] focus:shadow-[0_0_2px_#0ff,0_0_5px_#0ff,0_0_10px_#0ff] border-[#0ff] focus:outline-none focus:ring-2 focus:ring-cyan-500' : 'hover:bg-[#ededed] border-black'}`}
                 placeholder='Type your message...'
                 required
                 name='message'
             /><br/>
             <div className='flex justify-center'>
                 <input 
-                    className='w-[78px] rounded-sm border-black border-[2px] px-[6px] py-[3px] hover:bg-[#ededed] cursor-pointer active:bg-[#ededed] transition-all duration-200'
+                    className={`w-[78px] rounded-sm border-black border-[2px] px-[6px] py-[3px] cursor-pointer active:bg-[#ededed] transition-all duration-200 ${darkMode ? 'hover:bg-[#ffffff7b] hover:shadow-[0_0_2px_#0ff,0_0_2px_#0ff,0_0_5px_#0ff]' : 'hover:bg-[#ededed]'}`}
                     type = 'submit'
                 />
             </div>
