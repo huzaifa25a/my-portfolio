@@ -1,12 +1,14 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import ThemeToggle from './ThemeToggle';
 import {ThemeContext} from '../ThemeContext';
+import Typewriter from 'typewriter-effect';
 
 const Header = () => {
   const {darkMode} = useContext(ThemeContext);
   const [activeTab, setActiveTab] = useState('');
   const [menuOpen, setMenuOpen] = useState(false);
+  const [title, setTitle] = useState('');
 
   const navLinks = ['About', 'Skills', 'Services', 'Projects', 'Contact'];
 
@@ -17,8 +19,17 @@ const Header = () => {
 
   return (
     <header className={`fixed w-full z-50 border-b px-4 py-3 flex justify-between items-center ${darkMode ? 'bg-[#393939] shadow-[0_0_2px_#0ff,0_0_3px_#0ff,0_0_5px_#0ff] border-[#0ff]' : 'bg-[#f8f8f8] border-[#b9b9b9] shadow-sm'}`}>
-      <div className="text-xl font-bold self-end">
-        <a href='/'>Huzaifa.dev</a>
+      <div className="text-lg font-bold self-end">
+        <Typewriter
+          options={{
+            strings: [`<a href="/" class="${darkMode ? 'text-shadow-[0_0_1px_#0ff,0_0_1px_#0ff,0_0_3px_#0ff] hover:text-shadow-[0_0_2px_#0ff,0_0_2px_#0ff,0_0_4px_#0ff]' : 'hover:text-shadow-lg'}  style="${darkMode ? 'color:white; !important' : ''}>huzaifa.dev</a>`],
+            autoStart: true,
+            loop: true,
+            pauseFor: 2000,
+            delay: 200,
+            parseHTML: true
+          }}
+        />
       </div>
 
       {/* Desktop nav */}
