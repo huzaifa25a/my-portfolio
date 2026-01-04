@@ -46,7 +46,7 @@ const About = () => {
             {/* <p className='text-justify'>I also freelance on Fiverr, where I’ve earned a Level 2 Seller badge. I enjoy working with clients around the world and delivering work that exceeds expectations.</p> <br/><br/> */}
             <div className='flex flex-row gap-[20px] items-center'>
               <a
-                href="/Huzaifa_Pachisa-resume.pdf"
+                href="/Huzaifa Pachisa-Resume.pdf"
                 download="cv.pdf"
                 className={`inline-block border-black border-[2px] px-1 py-0.5 rounded-md transition-transform duration-200 drop-shadow-[0px_4px_4px_rgba(0,0,0,0.2)] hover:scale-105 active:scale-105 ${darkMode ? 'hover:shadow-[0_0_2px_#0ff,0_0_3px_#0ff,0_0_5px_#0ff] active:shadow-[0_0_2px_#0ff,0_0_3px_#0ff,0_0_5px_#0ff]' : 'hover:shadow-lg active:shadow-lg'}`}
               >

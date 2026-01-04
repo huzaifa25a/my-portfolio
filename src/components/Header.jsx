@@ -10,7 +10,7 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [title, setTitle] = useState('');
 
-  const navLinks = ['About', 'Skills', 'Services', 'Projects', 'Contact'];
+  const navLinks = ['About', 'Skills', 'Services', 'Projects', 'Certifications', 'Contact'];
 
   const handleTabClick = (tab) => {
     setActiveTab(tab);
@@ -81,7 +81,7 @@ const Header = () => {
         </nav>
       </div>
 
-      {/* Optional: Backdrop */}
+      {/* Backdrop */}
       {menuOpen && (
         <div
           onClick={() => setMenuOpen(false)}

@@ -11,6 +11,7 @@ import Footer from './components/Footer'
 import Skills from './components/Skills'
 import Services from './components/Services'
 import Projects from './components/Projects'
+import Certifications from './components/Certifications'
 
 const App = () => {
   const {darkMode} = useContext(ThemeContext);
@@ -63,6 +64,13 @@ const App = () => {
             <div id='projects' className={`p-8 w-full flex justify-center items-center ${darkMode ? 'bg-[#4d4d4d] shadow-[0_0_2px_#0ff,0_0_3px_#0ff,0_0_5px_#0ff] border-1 border-[#0ff]' :'bg-[#fbfbfb] shadow-md'} rounded-lg`}>
               <div className=''>
                 <Projects/>
+              </div>
+            </div>
+          </div>
+          <div id='Certifications' className='pt-12 mt-[-48px] my-8'>
+            <div id='Certifications' className={`p-8 w-full flex justify-center items-center ${darkMode ? 'bg-[#4d4d4d] shadow-[0_0_2px_#0ff,0_0_3px_#0ff,0_0_5px_#0ff] border-1 border-[#0ff]' :'bg-[#fbfbfb] shadow-md'} rounded-lg`}>
+              <div className=''>
+                <Certifications/>
               </div>
             </div>
           </div>

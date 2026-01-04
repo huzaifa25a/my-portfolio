@@ -11,6 +11,7 @@ import { ThemeContext } from '../ThemeContext'
 
 const Footer = () => {
     const {darkMode} = useContext(ThemeContext);
+    const date = new Date().getFullYear();
   return (
     <>
     {!darkMode && 
@@ -32,7 +33,7 @@ const Footer = () => {
                 <img src={darkMode ? instagram_white : instagram} alt='Instagram' className={`${darkMode ? 'h-[34px]' : 'h-[40px]'} transition-transform duration-100 hover:scale-105 active:scale-105`}/>
             </a>
         </div>
-        <p>Made by Huzaifa P &copy; 2025</p>
+        <p>Made by Huzaifa P &copy; {date}</p>
     </footer>
     </>
   )
