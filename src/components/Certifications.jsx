@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react'
 import aws_ccp from '../assets/aws-certified-cloud-practitioner.png'
 import az900 from '../assets/azure-fundamentals.png'
 import { ThemeContext } from '../ThemeContext'
-import '../App.css'
+// import '../App.css'
 
 const Projects = () => {
     const {darkMode} = useContext(ThemeContext);
@@ -21,6 +21,11 @@ const Projects = () => {
     },
   ];
 
+  const textStyle = {
+    color: darkMode ? 'black' : null,
+    borderColor: darkMode ? 'black' : null
+  }
+
   return (
     <div id='Certifications' className='flex flex-col items-center justify-center flex-wrap'>
       <h1 className='text-[24px] mb-6'>My Certifications</h1>
@@ -28,22 +33,25 @@ const Projects = () => {
         {Certifications.map((certificate, index) => (
           <div
             key={index}
-            className={`cursor-pointer rounded-[30px] w-[350px] h-[500px] transition-all duration-500 ease-in-out hover:scale-105 active:scale-105 border-[2px] ${darkMode ? 'shadow-[0_0_2px_#0ff,0_0_2px_#0ff,0_0_2px_#0ff] hover:shadow-[0_0_2px_#0ff,0_0_5px_#0ff,0_0_10px_#0ff] active:shadow-[0_0_2px_#0ff,0_0_5px_#0ff,0_0_10px_#0ff] border-[0_0_2px_#0ff,0_0_5px_#0ff,0_0_10px_#0ff]' : 'shadow-md hover:shadow-lg active:shadow-lg border-black '}`}
+            className={`flex flex-wrap justify-center items-center cursor-pointer rounded-[10px] w-[350px] h-auto gap-4 transition-all duration-500 ease-in-out hover:scale-105 active:scale-105 border-[2px] ${darkMode ? 'shadow-[0_0_2px_#0ff,0_0_2px_#0ff,0_0_2px_#0ff] hover:shadow-[0_0_2px_#0ff,0_0_5px_#0ff,0_0_10px_#0ff] active:shadow-[0_0_2px_#0ff,0_0_5px_#0ff,0_0_10px_#0ff] border-[0_0_2px_#0ff,0_0_5px_#0ff,0_0_10px_#0ff]' : 'shadow-md hover:shadow-lg active:shadow-lg border-black '}`}
           >
-            <img src={certificate.image} />
-            <div className='mt-2 flex flex-col justify-around'>
-              <span className = 'font-semibold text-center mb-2'>
+            <div className='p-2'>
+              <img src={certificate.image} className='h-[250px]'/>
+            </div>
+            <div className={`flex flex-col p-4 w-full rounded-b-[8px] ${darkMode ? 'bg-white opacity-80' : 'bg-gray-300'}`}>
+              <span className = 'font-semibold text-center mb-2' style={textStyle}>
                 {certificate.name}
               </span>
               <div className={`flex flex-col items-center text-justify`}>
-                <p className='font-medium text-sm mt-2 mb-6'>
+                <p className='font-medium text-sm mt-2 mb-6' style={textStyle}>
                   Issuer: {certificate.issuer}
                 </p>
                 <a
                   href={certificate.link}
                   target='_blank'
                   rel='noopener noreferrer'
-                  className={`inline-block border-black border-[2px] px-1 py-0.5 rounded-md transition-transform duration-200 drop-shadow-[0px_4px_4px_rgba(0,0,0,0.2)] ${darkMode ? 'hover:shadow-[0_0_2px_#0ff,0_0_3px_#0ff,0_0_5px_#0ff] active:shadow-[0_0_2px_#0ff,0_0_3px_#0ff,0_0_5px_#0ff]' : 'hover:shadow-lg active:shadow-lg'}`}
+                  className={`inline-block border-black border-[2px] px-1 py-0.5 rounded-md transition-transform duration-200 drop-shadow-[0px_4px_4px_rgba(0,0,0,0.2)] hover:shadow-lg active:shadow-lg`}
+                  style={textStyle}
                 >
                   credential link
                 </a>
