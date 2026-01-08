@@ -26,10 +26,6 @@ const Projects = () => {
     borderColor: darkMode ? 'black' : null
   }
 
-  const border={
-    borderColor: darkMode ? 'cyan' : null
-  }
-
   return (
     <div id='Certifications' className='flex flex-col items-center justify-center flex-wrap'>
       <h1 className='text-[24px] mb-6'>My Certifications</h1>
@@ -42,7 +38,7 @@ const Projects = () => {
             <div className='p-2'>
               <img src={certificate.image} className='h-[250px]'/>
             </div>
-            <div className={`flex flex-col p-4 w-full rounded-b-[8px] ${darkMode ? 'bg-white opacity-80 border-[2px] border-t-[0px]' : 'bg-gray-300'}`} style={border}>
+            <div className={`flex flex-col p-4 w-full rounded-b-[8px] ${darkMode ? 'bg-white opacity-80' : 'bg-gray-300'}`}>
               <span className = 'font-semibold text-center mb-2' style={textStyle}>
                 {certificate.name}
               </span>
