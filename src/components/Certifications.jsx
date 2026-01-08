@@ -37,7 +37,7 @@ const Projects = () => {
         {Certifications.map((certificate, index) => (
           <div
             key={index}
-            className={`flex flex-wrap justify-center items-center cursor-pointer rounded-[10px] w-[350px] h-auto gap-4 transition-all duration-500 ease-in-out hover:scale-105 active:scale-105 border-[2px] ${darkMode ? 'shadow-[0_0_2px_#0ff,0_0_2px_#0ff,0_0_2px_#0ff] hover:shadow-[0_0_2px_#0ff,0_0_5px_#0ff,0_0_10px_#0ff] active:shadow-[0_0_2px_#0ff,0_0_5px_#0ff,0_0_10px_#0ff] border-[0_0_2px_#0ff,0_0_5px_#0ff,0_0_10px_#0ff]' : 'shadow-md hover:shadow-lg active:shadow-lg border-black '}`}
+            className={`flex flex-wrap justify-center items-center cursor-pointer rounded-[10px] max-w-[350px] w-auto h-auto gap-4 transition-all duration-500 ease-in-out hover:scale-105 active:scale-105 border-[2px] ${darkMode ? 'shadow-[0_0_2px_#0ff,0_0_2px_#0ff,0_0_2px_#0ff] hover:shadow-[0_0_2px_#0ff,0_0_5px_#0ff,0_0_10px_#0ff] active:shadow-[0_0_2px_#0ff,0_0_5px_#0ff,0_0_10px_#0ff] border-[0_0_2px_#0ff,0_0_5px_#0ff,0_0_10px_#0ff]' : 'shadow-md hover:shadow-lg active:shadow-lg border-black '}`}
           >
             <div className='p-2'>
               <img src={certificate.image} className='h-[250px]'/>
