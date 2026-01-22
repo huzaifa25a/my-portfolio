@@ -8,6 +8,7 @@ import mongo from '../assets/mongodb.svg';
 import bootstrap from '../assets/bootstrap.svg';
 import tailwind from '../assets/tailwindcss.svg';
 import css from '../assets/css3.png';
+import MySQL from '../assets/MySQL.svg'
 import { ThemeContext } from '../ThemeContext';
 
 const Skills = () => {
@@ -18,10 +19,11 @@ const Skills = () => {
     });
 
     const skills = [
-        {name: 'JavaScript', icon: javascript, level: 84},
-        {name: 'ReactJs', icon: react, level: 78},
-        {name: 'NodeJs', icon: nodejs, level: 60},
-        {name: 'MongoDB', icon: mongo, level: 50},
+        {name: 'JavaScript', icon: javascript, level: 85},
+        {name: 'ReactJs', icon: react, level: 80},
+        {name: 'NodeJs', icon: nodejs, level: 75},
+        {name: 'MySQL', icon: MySQL, level: 82},
+        {name: 'MongoDB', icon: mongo, level: 70},
         {name: 'Bootstrap', icon: bootstrap, level: 80},
         {name: 'Tailwind', icon: tailwind, level: 90},
         {name: 'CSS3', icon: css, level: 90},
