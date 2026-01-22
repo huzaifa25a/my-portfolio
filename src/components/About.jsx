@@ -15,7 +15,7 @@ const About = () => {
     <div className='flex flex-col w-full'>
       <div id='aboutMe' className='flex flex-row w-full justify-center gap-[150px] flex-wrap'> 
         <div className='flex flex-col justify-center'>
-          <img src={profile} alt='Huzaifa Pachisa' className={`rounded-[100%] h-[200px] w-[200px] mb-[10px] border ${darkMode ? 'shadow-[0_0_2px_#0ff,0_0_3px_#0ff,0_0_5px_#0ff]' : 'border-[rgba(0,0,0,0.2)]'}`}/>
+          <img src={profile} alt='Huzaifa Pachisa' className={`rounded-[100%] h-[300px] w-[300px] mb-[10px] border ${darkMode ? 'shadow-[0_0_2px_#0ff,0_0_3px_#0ff,0_0_5px_#0ff]' : 'border-[rgba(0,0,0,0.2)]'}`}/>
           <span className='flex flex-col justify-center items-center'>
             <h3 className='text-center'>Huzaifa Pachisa</h3>
             <h3 className='text-center'>Full-stack developer</h3>
@@ -32,7 +32,7 @@ const About = () => {
             </div>
           </span>
         </div>
-        <div className='flex flex-col w-[540px] gap-[10px]'>
+        <div className='flex flex-col w-[540px] gap-[10px] justify-evenly'>
           <div className='flex flex-col'>
             <h1 className='text-[24px] mb-4 text-center'>About Me</h1>
             <p className='text-justify'>I’m a full-stack developer with a Master’s in Computer Applications. I specialize in building web applications using the MERN stack — React, Node.js, MongoDB, and Express. I’m passionate about creating sleek, functional, and user-friendly interfaces while ensuring high performance. When I'm not coding, you’ll find me gaming or planning my next adventure.</p>

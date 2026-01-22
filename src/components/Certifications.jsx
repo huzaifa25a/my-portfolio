@@ -44,7 +44,7 @@ const Projects = () => {
               </span>
               <div className={`flex flex-col items-center text-justify`}>
                 <p className='font-medium text-sm mt-2 mb-6' style={textStyle}>
-                  Issuer: {certificate.issuer}4
+                  Issuer: {certificate.issuer}
                 </p>
                 <a
                   href={certificate.link}
