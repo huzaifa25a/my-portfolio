@@ -22,8 +22,8 @@ const Projects = () => {
   ];
 
   const textStyle = {
-    color: darkMode ? 'black' : null,
-    borderColor: darkMode ? 'black' : null
+    color: darkMode ? 'white' : 'white',
+    borderColor: darkMode ? 'white' : 'white'
   }
 
   return (
@@ -38,13 +38,13 @@ const Projects = () => {
             <div className='p-2'>
               <img src={certificate.image} className='h-[250px]'/>
             </div>
-            <div className={`flex flex-col p-4 w-full rounded-b-[8px] ${darkMode ? 'bg-white opacity-80' : 'bg-gray-300'}`}>
+            <div className={`flex flex-col p-4 w-full rounded-b-[8px] border-t-2 border-black ${darkMode ? 'bg-gray-500 shadow-[0_0_2px_#0ff,0_0_2px_#0ff,0_0_2px_#0ff] hover:shadow-[0_0_2px_#0ff,0_0_5px_#0ff,0_0_10px_#0ff] active:shadow-[0_0_2px_#0ff,0_0_5px_#0ff,0_0_10px_#0ff]' : 'bg-gray-500'}`}>
               <span className = 'font-semibold text-center mb-2' style={textStyle}>
                 {certificate.name}
               </span>
               <div className={`flex flex-col items-center text-justify`}>
                 <p className='font-medium text-sm mt-2 mb-6' style={textStyle}>
-                  Issuer: {certificate.issuer}
+                  Issuer: {certificate.issuer}4
                 </p>
                 <a
                   href={certificate.link}

@@ -40,8 +40,8 @@ const About = () => {
           <div className='flex flex-col items-center'>
             <div className='flex flex-row gap-[20px] items-center'>
               <a
-                href="/Huzaifa P - Resume.pdf"
-                download="cv.pdf"
+                href="/Huzaifa_Pachisa-Full_Stack.docx"
+                download="cv.docx"
                 className={`inline-block border-black border-[2px] px-1 py-0.5 rounded-md transition-transform duration-200 drop-shadow-[0px_4px_4px_rgba(0,0,0,0.2)] hover:scale-105 active:scale-105 ${darkMode ? 'hover:shadow-[0_0_2px_#0ff,0_0_3px_#0ff,0_0_5px_#0ff] active:shadow-[0_0_2px_#0ff,0_0_3px_#0ff,0_0_5px_#0ff]' : 'hover:shadow-lg active:shadow-lg'}`}
               >
                 Download CV

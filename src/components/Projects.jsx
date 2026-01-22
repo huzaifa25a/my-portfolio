@@ -3,6 +3,7 @@ import quickmark from '../assets/quickmark.svg'
 import shipkart from '../assets/shipkart-1.png'
 import nutrigen from '../assets/nutrigen-1.png'
 import countryApp from '../assets/world-app.gif'
+import emirnest from '../assets/emirnest-2.png'
 import rightIcon from '../assets/right-arrow.svg'
 import '../App.css'
 
@@ -14,35 +15,47 @@ const Projects = () => {
       name: 'Quickmark AI enabled bookmark manager',
       description:
         'Quickmark is a smart Chrome extension designed to simplify bookmark management. It lets users seamlessly add, edit, and remove bookmarks while offering advanced search and filtering capabilities for quickly locating saved websites.',
-      link: 'https://github.com/huzaifa25a/QuickMark-chrome-extension'
+      github: 'https://github.com/huzaifa25a/QuickMark-chrome-extension',
+      live: ''
     },
     {
       image: countryApp,
       name: 'The World Explorer App',
       description:
         `Country App is an interactive web project that displays detailed information about every country in the world. Users can explore flags, populations, currencies, spoken languages, and other key facts in a visually engaging interface.`,
-      link: 'https://github.com/huzaifa25a/country-app'
+      github: 'https://github.com/huzaifa25a/country-app',
+      live: 'https://country-app-ten-psi.vercel.app/'
+    },
+    {
+      image: emirnest,
+      name: 'Emirnest - UAE Real Estate Portal',
+      description: 
+        `Emirnest is a full-stack real estate platform designed for the UAE market, enabling users to browse, search, and list properties for rent or sale. The application supports secure authentication, role-based property management, dynamic search filters, and detailed property pages, providing a smooth and reliable real estate experience.`,
+      github: 'https://github.com/huzaifa25a/Emirnest-Real-Estate',
+      live: 'https://emirnest-real-estate.vercel.app/'
     },
     {
       image: shipkart,
       name: 'Shipkart - Online courier service',
       description:
         'Shipkart is a courier service web application that enables users to send and receive packages across the country. It provides real-time, personalized shipping quotes based on regions and offers various service levels—from basic to premium.',
-      link: 'https://github.com/huzaifa25a/Shipkart'
+      github: 'https://github.com/huzaifa25a/Shipkart',
+      live: ''
     },
     {
       image: nutrigen,
       name: 'Nutrigen - Diet planner and recommendation app',
       description:
         `Nutrigen is a health-focused app that delivers personalized diet plans and recipe recommendations. It tailors suggestions according to the user's dietary preferences, fitness goals, and health conditions to promote better eating habits.`,
-      link: 'https://github.com/huzaifa25a/Nutrigen'
+      github: 'https://github.com/huzaifa25a/Nutrigen',
+      live: ''
     },
   ];
 
   return (
     <div id='Projects' className='flex flex-col items-center justify-center flex-wrap'>
       <h1 className='text-[24px] mb-6'>My Projects</h1>
-      <div className='flex flex-row flex-wrap gap-10 justify-center'>
+      <div className='flex flex-row flex-wrap gap-10 justify-center max-w-[80vw]'>
         {projects.map((project, index) => (
           <div
             key={index}
@@ -87,16 +100,28 @@ const Projects = () => {
                 >
                   {project.description}
                 </p>
-                <a
-                  href={project.link}
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  className='flex gap-2 transition-tranform hover:scale-105 duration-200 items-center hover:bg-[#e5e5e5a3] px-2 py-1 rounded-lg active:bg-[#e5e5e5a3]'
-                  style={{color: '#e6e6e6'}}
-                >
-                  Know more 
-                  <img src={rightIcon} alt='right arrow' className='h-[20px]'/>
-                </a>
+                <div className='flex flex-row gap-6'>
+                  <a
+                    href={project.github}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    className='flex gap-2 transition-tranform hover:scale-105 duration-200 items-center hover:bg-[#e5e5e5a3] px-2 py-1 rounded-lg active:bg-[#e5e5e5a3]'
+                    style={{color: '#e6e6e6'}}
+                  >
+                    GitHub
+                    <img src={rightIcon} alt='right arrow' className='h-[20px]'/>
+                  </a>
+                  <a
+                    href={project.live}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    className='flex gap-2 transition-tranform hover:scale-105 duration-200 items-center hover:bg-[#e5e5e5a3] px-2 py-1 rounded-lg active:bg-[#e5e5e5a3]'
+                    style={{color: '#e6e6e6'}}
+                  >
+                    Live
+                    <img src={rightIcon} alt='right arrow' className='h-[20px]'/>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
