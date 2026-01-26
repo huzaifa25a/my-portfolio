@@ -16,7 +16,7 @@ const Projects = () => {
       description:
         'Quickmark is a smart Chrome extension designed to simplify bookmark management. It lets users seamlessly add, edit, and remove bookmarks while offering advanced search and filtering capabilities for quickly locating saved websites.',
       github: 'https://github.com/huzaifa25a/QuickMark-chrome-extension',
-      live: ''
+      live: 'https://chromewebstore.google.com/detail/quickmark-extension/aekidkilaeamdkbaefbihcepeeoaehlh?hl=en-GB&authuser=0'
     },
     {
       image: countryApp,
