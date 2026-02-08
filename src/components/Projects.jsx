@@ -4,6 +4,7 @@ import shipkart from '../assets/shipkart-1.png'
 import nutrigen from '../assets/nutrigen-1.png'
 import countryApp from '../assets/world-app.gif'
 import emirnest from '../assets/emirnest-2.png'
+import JustDoIt from '../assets/Just-Do-It.png'
 import rightIcon from '../assets/right-arrow.svg'
 import '../App.css'
 
@@ -33,6 +34,14 @@ const Projects = () => {
         `Emirnest is a full-stack real estate platform designed for the UAE market, enabling users to browse, search, and list properties for rent or sale. The application supports secure authentication, role-based property management, dynamic search filters, and detailed property pages, providing a smooth and reliable real estate experience.`,
       github: 'https://github.com/huzaifa25a/Emirnest-Real-Estate',
       live: 'https://emirnest-real-estate.vercel.app/'
+    },
+    {
+      image: JustDoIt,
+      name: 'Just Do It - Todo list app',
+      description: 
+        `Just Do It is a modern todo list application that helps users plan, track, and manage their daily tasks efficiently. It supports task creation with priorities, due dates, statuses, tags, and notes, providing a clean and intuitive interface to stay organized and productive.`,
+      github: 'https://github.com/huzaifa25a/Just-Do-It',
+      live: 'https://just-do-it-eight.vercel.app/'
     },
     {
       image: shipkart,

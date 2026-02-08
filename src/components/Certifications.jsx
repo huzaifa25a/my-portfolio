@@ -22,8 +22,8 @@ const Projects = () => {
   ];
 
   const textStyle = {
-    color: darkMode ? 'white' : 'white',
-    borderColor: darkMode ? 'white' : 'white'
+    color: darkMode ? 'black' : 'white',
+    borderColor: darkMode ? 'black' : 'white'
   }
 
   return (
@@ -38,7 +38,7 @@ const Projects = () => {
             <div className='p-2'>
               <img src={certificate.image} className='h-[250px]'/>
             </div>
-            <div className={`flex flex-col p-4 w-full rounded-b-[8px] border-t-2 border-black ${darkMode ? 'bg-gray-500 shadow-[0_0_2px_#0ff,0_0_2px_#0ff,0_0_2px_#0ff] hover:shadow-[0_0_2px_#0ff,0_0_5px_#0ff,0_0_10px_#0ff] active:shadow-[0_0_2px_#0ff,0_0_5px_#0ff,0_0_10px_#0ff]' : 'bg-gray-500'}`}>
+            <div className={`flex flex-col p-4 w-full rounded-b-[8px] border-t-2 border-black ${darkMode ? 'bg-white opacity-90 shadow-[0_0_2px_#0ff,0_0_2px_#0ff,0_0_2px_#0ff] hover:shadow-[0_0_2px_#0ff,0_0_5px_#0ff,0_0_10px_#0ff] active:shadow-[0_0_2px_#0ff,0_0_5px_#0ff,0_0_10px_#0ff]' : 'bg-gray-500'}`}>
               <span className = 'font-semibold text-center mb-2' style={textStyle}>
                 {certificate.name}
               </span>
